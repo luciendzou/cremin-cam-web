@@ -1,0 +1,134 @@
+.head-img-contact {
+    padding: 5% 6%;
+    background-position: center;
+    height: 50vh;
+}
+
+.head-img-contact .title-header {
+    width: 50%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+.head-img-contact .title-header h6 {
+    font-size: 22px;
+    margin-bottom: 2%;
+}
+
+
+.contact {
+    padding: 6% 6%;
+    color: #000;
+}
+
+.contact h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+
+.contact .conts {
+    margin-bottom: 4%;
+}
+
+.contact .phone-contact,
+.contact .mail-contact {
+    padding: 2% 4%;
+    border-radius: 5px;
+    background-color: #0845b6;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+
+.contact .social h4 {
+    font-size: 32px;
+}
+
+.contact .social a {
+    border: none;
+    margin-top: 2%;
+}
+
+.details-contact {
+    padding: 3% 2%;
+    background-color: #00000017;
+    margin-top: 3%;
+}
+
+.details-contact h5 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 360px) {
+    .head-img-contact {
+        height: 20vh;
+        background-position: right;
+        background-size: cover;
+    }
+
+    .head-img-contact .title-header {
+        width: 90%;
+    }
+
+    .head-img-contact .title-header h1 {
+        font-size: 22px;
+        margin-bottom: 2%;
+    }
+
+    .head-img-contact .title-header h6 {
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .head-img-contact {
+        height: 20vh;
+        background-position: right;
+        background-size: cover;
+    }
+
+    .head-img-contact .title-header {
+        width: 100%;
+    }
+
+    .head-img-contact .title-header h1 {
+        font-size: 22px;
+        margin-bottom: 2%;
+    }
+
+    .head-img-contact .title-header h6 {
+        font-size: 12px;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .head-img-contact {
+        height: 30vh;
+        background-position: right;
+        background-size: cover;
+    }
+
+    .head-img-contact .title-header {
+        width: 70%;
+    }
+
+    .head-img-contact .title-header h1 {
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+
+    .head-img-contact .title-header h6 {
+        font-size: 18px;
+        margin-bottom: 2%;
+    }
+}

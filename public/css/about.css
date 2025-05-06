@@ -1,0 +1,114 @@
+.about-1 {
+    padding: 6% 6%;
+}
+
+.about-1 h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+
+.about-1 p {
+    color: black;
+    font-size: 22px;
+    padding: 2% 2%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 2%;
+}
+
+.card-title {
+    color: black;
+    font-weight: bold;
+}
+
+.row .card-text {
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.title-2-about,
+.title-3-about {
+    margin-top: 5%;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.services-about .col-4 {
+    margin: 1% 0%;
+}
+
+.services-about h4 {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.services-about i {
+    font-size: 1.1rem;
+    color: orange;
+}
+
+.organigrame {
+    background-color: white;
+    padding: 4% 0% 0% 0%;
+}
+
+.organigrame h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 5%;
+    padding: 0% 3%;
+}
+
+.img-orgina,
+.orgis-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-organi {
+    padding: 3% 0%;
+}
+
+.text-organi i {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-organi h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0% 8%;
+}
+
+.text-organi p {
+    color: black;
+    font-size: 14px;
+    margin: 2% 14%;
+}
+
+
+
+.team {
+    background-image: linear-gradient(to right, rgba(2, 175, 255, 0.445) 0%, rgba(255, 255, 255, 0.055) 30%, rgba(255, 207, 162, 0.445) 70%);
+    padding: 4% 6%;
+}
+
+.team h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,663 @@
+.img-header-home {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.img-header-home .carousel-item {
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12% 6% 2% 6%;
+}
+
+
+.carousel-item .title-header-home {
+    width: 70%;
+}
+
+
+.title-header-home h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.title-header-home p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btn-light-home {
+    border-radius: 5px;
+    background: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(10, 111, 226);
+    box-shadow: 0 0 8px #ccc;
+    text-decoration: none;
+    padding: 2%;
+    margin-right: 1%;
+    border: none;
+}
+
+.btn-blue-home {
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(3, 69, 145);
+    text-decoration: none;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgb(4, 75, 156);
+    border: none;
+}
+
+.btn-blue-home:hover {
+    background-color: rgb(7, 98, 202);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 12px rgb(7, 98, 202);
+}
+
+.btn-light-home:hover {
+    background-color: white;
+    color: rgb(4, 75, 156);
+    box-shadow: 0 0 10px #ccc;
+}
+
+.details-home {
+    padding: 6% 6%;
+    margin-bottom: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.0001px;
+}
+
+
+.details-home h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.details-home .row {
+    margin-top: 4%;
+}
+
+.details-home .row .card {
+    padding: 3% 4%;
+    border: none;
+}
+
+.details-home .row .card-body {
+    font-size: 150%;
+    text-decoration: none;
+}
+
+
+.img-smile-pic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-smile-home .img-smile-text {
+    padding: 4% 6%;
+}
+
+.img-smile-home .paraph {
+    margin-top: 14%;
+    margin-bottom: 8%;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+.img-smile-home b {
+    color: orange;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.img-smile-home h1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.img-smile-home .btn-smile-home {
+    display: block;
+    font-size: 16px;
+    padding: 3% 4%;
+    width: 100%;
+    text-decoration: none;
+    background-color: rgb(2, 79, 151);
+    color: #fff;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-smile-home-1 {
+    display: block;
+    font-size: 16px;
+    padding: 4%;
+    width: 100%;
+    text-decoration: none;
+    background-color: rgb(2, 79, 151);
+    color: #fff;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-smile-home-1:hover {
+    color: #fff;
+}
+
+
+.btn-smile-home-outline {
+    display: block;
+    font-size: 16px;
+    padding: 3% 3%;
+    width: 100%;
+    text-decoration: none;
+    border: 2px solid rgb(2, 79, 151);
+    color: rgb(2, 79, 151);
+    box-shadow: 0 3px 8px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.featured-services {
+    padding: 8% 6% 1% 6%;
+    background-color: rgba(230, 230, 230, 0.288);
+    position: relative;
+}
+
+.featured-services h1 {
+    font-size: 40px;
+    margin-bottom: 4%;
+    font-weight: bold;
+}
+
+.choose {
+    padding: 2% 6% 5% 6%;
+    background-color: rgba(230, 230, 230, 0.288);
+    position: relative;
+}
+
+.count-box i {
+    font-size: 48px;
+    color: orange;
+    float: left;
+    line-height: 0;
+    display: block;
+}
+
+.count-box span {
+    font-size: 28px;
+    line-height: 24px;
+    display: block;
+    font-weight: 700;
+    color: #646c55;
+    margin-left: 60px;
+}
+
+.count-box p {
+    padding: 5px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #646c55;
+}
+
+
+.clients-home {
+    padding-top: 60px;
+}
+
+.clients-home h1 {
+    font-size: 40px;
+    margin-bottom: 6%;
+    font-weight: bold;
+}
+
+.clients-home .swiper-slide img {
+    opacity: 0.5;
+    transition: 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.clients-home .swiper-slide img:hover {
+    opacity: 1;
+}
+
+.clients-home .swiper-pagination {
+    margin-top: 5%;
+    position: relative;
+}
+
+.clients-home .swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #458fc0;
+}
+
+.clients-home .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #458fc0;
+}
+
+
+@media screen and (max-width: 360px) {
+    #topbar {
+        height: 30px;
+    }
+
+    #topbar .container-fluid .contact-info {
+        display: block !important;
+    }
+
+    #topbar .container-fluid .contact-info i {
+        display: flex !important;
+    }
+
+    #topbar .container-fluid .contact-info a {
+        display: none !important;
+    }
+
+    #header {
+        padding: auto 4%;
+    }
+
+    .appointment-btn{
+        font-size: 12px;
+        margin-right: 3%;
+        margin-left: 25px;
+    }
+
+    .appointment-btn-round{
+        font-size: 12px;
+        margin-right: 3%;
+        padding: 5px 5px 5px 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .img-header-home .carousel-item {
+        height: 65vh;
+        padding: 0;
+        background-position: right;
+    }
+
+
+    .bg-header{
+        width: 100%;
+        height: 65vh;
+        padding: 10% 6% 2% 6%;
+        display: block;
+        background-color: #0000009f;
+    }
+
+    .carousel-item .title-header-home {
+        width: 80%;
+    }
+
+    .title-header-home h1 {
+        color: white;
+        font-size: 30px;
+    }
+    .title-header-home p {
+        color: white;
+        font-size: 15px;
+    }
+
+    .carousel-item .d-flex{
+        justify-content: space-between;
+        display: block !important;
+    }
+
+    .carousel-item .d-flex .btn-light-home {
+        border-radius: 5px;
+        font-size: 10px;
+        padding: 3% 0.5% !important;
+        width: 60%;
+        display:  block !important;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    .carousel-item .d-flex .btn-blue-home {
+        border-radius: 5px;
+        font-size: 10px;
+        padding: 3% 0.5% !important;
+        width: 60%;
+        display:  block !important;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    .details-home h1 {
+        font-size: 30px;
+    }
+
+    .details-home .row .col-3{
+        width: 100%;
+    }
+
+    .img-smile-home .col-6{
+        width: 100%;
+    }
+
+    .img-smile-home .btn-smile-home-outline {
+        margin-top: 2%;
+    }
+
+    .featured-services h1 {
+        font-size: 30px;
+        margin-bottom: 6%;
+    }
+
+    .featured-services .icon i{
+        font-size: 30px;
+    }
+
+    .featured-services .title a{
+        font-size: 14px;
+    }
+
+    .featured-services .description{
+        font-size: 12px;
+    }
+
+
+    .choose .col-lg-3 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .clients-home h1 {
+        font-size: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 415px) {
+    #topbar {
+        height: 30px;
+    }
+
+    #topbar .container-fluid .contact-info {
+        display: block !important;
+    }
+
+    #topbar .container-fluid .contact-info i {
+        display: flex !important;
+    }
+
+    #topbar .container-fluid .contact-info a {
+        display: none !important;
+    }
+
+    #header {
+        padding: auto 4%;
+    }
+
+    .appointment-btn{
+        font-size: 12px;
+        margin-right: 3%;
+        margin-left: 25px;
+    }
+
+    .appointment-btn-round{
+        font-size: 12px;
+        margin-right: 3%;
+        padding: 5px 5px 5px 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .img-header-home .carousel-item {
+        height: 40vh;
+        padding: 0;
+        background-position: right;
+    }
+
+
+    .bg-header{
+        width: 100%;
+        height: 40vh;
+        padding: 10% 6% 2% 6%;
+        display: block;
+        background-color: #0000009f;
+    }
+
+    .carousel-item .title-header-home {
+        width: 80%;
+    }
+
+    .title-header-home h1 {
+        color: white;
+        font-size: 40px;
+    }
+    .title-header-home p {
+        color: white;
+        font-size: 14px;
+    }
+
+    .carousel-item .d-flex{
+        justify-content: space-between;
+        display: block !important;
+    }
+
+    .carousel-item .d-flex .btn-light-home {
+        border-radius: 5px;
+        font-size: 13px;
+        padding: 3% 0.5% !important;
+        width: 60%;
+        display:  block !important;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    .carousel-item .d-flex .btn-blue-home {
+        border-radius: 5px;
+        font-size: 13px;
+        padding: 3% 0.5% !important;
+        width: 60%;
+        display:  block !important;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    .details-home h1 {
+        font-size: 30px;
+    }
+
+    .details-home .row .col-3{
+        width: 100%;
+    }
+
+    .img-smile-home .col-6{
+        width: 100%;
+    }
+
+    .img-smile-home .btn-smile-home-outline {
+        margin-top: 2%;
+    }
+
+    .featured-services h1 {
+        font-size: 30px;
+        margin-bottom: 6%;
+    }
+
+    .featured-services .icon i{
+        font-size: 30px;
+    }
+
+    .featured-services .title a{
+        font-size: 14px;
+    }
+
+    .featured-services .description{
+        font-size: 12px;
+    }
+
+
+    .choose .col-lg-3 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .clients-home h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    #topbar {
+        height: 30px;
+    }
+
+    #topbar .container-fluid .contact-info {
+        display: block !important;
+    }
+
+    #topbar .container-fluid .contact-info i {
+        display: flex !important;
+    }
+
+    #topbar .container-fluid .contact-info a {
+        display: none !important;
+    }
+
+    #header {
+        padding: auto 4%;
+    }
+
+    .appointment-btn{
+        font-size: 12px;
+        margin-right: 3%;
+        margin-left: 25px;
+    }
+
+    .appointment-btn-round{
+        font-size: 12px;
+        margin-right: 3%;
+        padding: 5px 5px 5px 5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .img-header-home .carousel-item {
+        height: 40vh;
+        padding: 0;
+        background-position: right;
+    }
+
+
+    .bg-header{
+        width: 100%;
+        height: 40vh;
+        padding: 10% 6% 2% 6%;
+        display: block;
+        background-color: #0000009f;
+    }
+
+    .carousel-item .title-header-home {
+        width: 80%;
+    }
+
+    .title-header-home h1 {
+        color: white;
+        font-size: 40px;
+    }
+    .title-header-home p {
+        color: white;
+        font-size: 14px;
+    }
+
+    .carousel-item .d-flex{
+        justify-content: space-between;
+        display: block !important;
+    }
+
+    .carousel-item .d-flex .btn-light-home {
+        border-radius: 5px;
+        font-size: 13px;
+        padding: 3% 0.5% !important;
+        width: 60%;
+        display:  block !important;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    .carousel-item .d-flex .btn-blue-home {
+        border-radius: 5px;
+        font-size: 13px;
+        padding: 3% 0.5% !important;
+        width: 60%;
+        display:  block !important;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    .details-home h1 {
+        font-size: 30px;
+    }
+
+    .details-home .row .col-3{
+        width: 100%;
+    }
+
+    .img-smile-home .col-6{
+        width: 100%;
+    }
+
+    .img-smile-home .btn-smile-home-outline {
+        margin-top: 2%;
+    }
+
+    .featured-services h1 {
+        font-size: 30px;
+        margin-bottom: 6%;
+    }
+
+    .featured-services .icon i{
+        font-size: 40px;
+    }
+
+    .featured-services .title a{
+        font-size: 18px;
+    }
+
+    .featured-services .description{
+        font-size: 14px;
+    }
+
+
+    .choose .col-lg-3 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .clients-home h1 {
+        font-size: 30px;
+    }
+}
+
+

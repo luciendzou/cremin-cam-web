@@ -1,0 +1,210 @@
+.epargne-1 {
+    padding: 5% 6%;
+    color: #000;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.epargne-1 .epargne-1-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.epargne-1 .epargne-1-text p {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.epargne-1-img {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 65%;
+    height: 60vh;
+}
+
+.btn-epargne-1 {
+    background-color: transparent;
+    color: #047ccc;
+    border: 2px solid #047ccc;
+    border-radius: 6px;
+    padding: 2% 5%;
+}
+
+.epargne-def{
+    padding: 5% 6%;
+    color: #000;
+}
+
+.epargne-def h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+
+.epargne-def .carte-img-epargne{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.epargne-def .carte-text-epargne{
+    padding: 3% 4%;
+    text-align: center;
+}
+
+.epargne-def .carte-text-epargne i{
+    font-size: 30px;
+    color: orange;
+    margin-bottom: 4%;
+}
+
+.epargne-def .carte-text-epargne h4{
+font-size: 36px;
+color: #000;
+font-weight: bold;
+margin-bottom: 5%;
+}
+
+.epargne-def .carte-text-epargne p{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 2%;
+    line-height: 25px;
+}
+
+.p-button{
+    margin-top: 10%;
+}
+
+.btn-epargne{
+    padding: 1.8% 6%;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 2px solid #047ccc;
+    border-radius: 18px;
+    color: #047ccc;
+    font-weight: bold;
+}
+
+.btn-epargne:hover{
+    background-color: #047ccc;
+    color: #fff;
+}
+
+.epargne-type{
+    padding: 5% 6%;
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+.epargne-type h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.epargne-type p{
+    text-align: 18px;
+    margin-bottom: 2%;
+    margin-left: 0.5%;
+    font-weight: bold;
+}
+
+.epargne-type ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.epargne-type ul li{
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.epargne-type-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.epargne-type-img-card{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height:65vh;
+    background-size: contain;
+}
+
+.epargne-type .p-button{
+    padding-left: 5%;
+    margin-bottom: 12%;
+}
+
+.type-compte-epargne{
+    margin-top: 8%;
+}
+
+.type-compte-epargne .title{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 6%;
+}
+
+.type-compte-epargne h1{
+    margin-bottom: 3%;
+}
+
+.type-compte-epargne .card .card-body{
+    padding: 8% 8% 5% 8%;
+}
+
+.type-compte-epargne p{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.vip-epargne h5{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.vip-epargne p{
+    font-size: 17px;
+    font-weight: normal;
+    color: #424242;
+}
+
+.title-big{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.epargne-bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    animation: zoom 8s infinite;
+    -webkit-animation: zoom 8s infinite;
+}
+
+@keyframes zoom {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 120%;
+    }
+    100% {
+     background-size: 100%;
+    }
+  } 
+
+.link-epargne-vip{
+    font-size: 18px;
+}

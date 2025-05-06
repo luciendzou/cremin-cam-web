@@ -1,0 +1,309 @@
+.head-img-entreprise {
+    width: 100%;
+    height: 80vh;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12% 6% 2% 6%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-position: center
+}
+
+.head-img-entreprise a{
+    width: 20%;
+}
+
+.title-header-entreprise{
+    width: 58%;
+}
+
+.title-header-entreprise h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.title-header-entreprise h6 {
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+.heading-entreprise{
+    position: absolute;
+    top: 580px;
+    width: 100%;
+    height: 25vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.heading-entreprise a{
+    font-size: 18px;
+    color: #0263d3;
+    padding: 1% 3%;
+}
+
+.heading-entreprise i{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+#particulier{
+    padding: 6% 6% 0% 6%;
+    color: black;
+    margin-bottom: 0%;
+}
+
+#particulier h1{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 6%;
+}
+
+#particulier .row{
+    background-color: white;
+}
+
+.text-part{
+    padding: 5% 4%;
+    text-align: center;
+}
+
+.text-part h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.text-part b{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text-part p{
+    padding: 0% 8%;
+}
+
+.img-part{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.services-entreprise{
+    margin-top: 0%;
+    padding: 5% 4% 5% 4%;
+    color: black;
+    background-color: #0263d311;
+}
+
+.services-entreprise .card{
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+    padding: 3%;
+    transition: 0.5s;
+}
+
+.services-entreprise .card:hover{
+    box-shadow: 0 0 8px #ccc;
+}
+
+.services-entreprise h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 3%;
+    color: #000;
+}
+
+.services-entreprise .col-3, .services-entreprise .col-4, .services-entreprise .col-12{
+    padding: 1% 1%;
+}
+
+.services-entreprise .card-body span{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 360px){
+    .head-img-entreprise {
+        height: 40vh;
+        padding: 0;
+        background-position: right
+    }
+
+    .bg-entre-parti{
+        width: 100%;
+        height: 40vh;
+        background-color: #000000a1;
+        padding: 12% 6% 2% 6%;
+    }
+
+    .title-header-entreprise{
+        width: 78%;
+    }
+
+    .title-header-entreprise h2 {
+        font-size: 40px;
+    }
+
+    .title-header-entreprise h6 {
+        font-size: 20px;
+    }
+
+    .head-img-entreprise a{
+        width: 60%;
+    }
+
+    #particulier h1{
+        font-size: 25px;
+        margin-bottom: 8%;
+    }
+
+    #particulier .col-6{
+        width: 100%;
+    }
+
+    .text-part b{
+        font-size: 18px;
+    }
+
+    .text-part p{
+        font-size: 16px;
+    }
+
+    .services-entreprise{
+        padding: 5% 6% 5% 6%;
+    }
+
+    .services-entreprise h1{
+        font-size: 25px;
+    }
+    .services-entreprise .col-3, .services-entreprise .col-4, .services-entreprise .col-12{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 415px){
+    .head-img-entreprise {
+        height: 43vh;
+        padding: 0;
+        background-position: right
+    }
+
+    .bg-entre-parti{
+        width: 100%;
+        height: 43vh;
+        background-color: #000000a1;
+        padding: 12% 6% 2% 6%;
+    }
+
+    .title-header-entreprise{
+        width: 85%;
+    }
+
+    .title-header-entreprise h2 {
+        font-size: 45px;
+    }
+
+    .title-header-entreprise h6 {
+        font-size: 25px;
+    }
+
+    .head-img-entreprise a{
+        width: 60%;
+    }
+
+    #particulier h1{
+        font-size: 30px;
+        margin-bottom: 8%;
+    }
+
+    #particulier .col-6{
+        width: 100%;
+    }
+
+    .text-part b{
+        font-size: 18px;
+    }
+
+    .text-part p{
+        font-size: 16px;
+    }
+
+    .services-entreprise{
+        padding: 5% 6% 5% 6%;
+    }
+
+    .services-entreprise h1{
+        font-size: 30px;
+    }
+    .services-entreprise .col-3, .services-entreprise .col-4, .services-entreprise .col-12{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 601px){
+    .head-img-entreprise {
+        height: 43vh;
+        padding: 0;
+        background-position: right
+    }
+
+    .bg-entre-parti{
+        width: 100%;
+        height: 43vh;
+        background-color: #000000a1;
+        padding: 12% 6% 2% 6%;
+    }
+
+    .title-header-entreprise{
+        width: 85%;
+    }
+
+    .title-header-entreprise h2 {
+        font-size: 45px;
+    }
+
+    .title-header-entreprise h6 {
+        font-size: 25px;
+    }
+
+    .head-img-entreprise a{
+        width: 60%;
+    }
+
+    #particulier h1{
+        font-size: 30px;
+        margin-bottom: 8%;
+    }
+
+    #particulier .col-6{
+        width: 100%;
+    }
+
+    .text-part b{
+        font-size: 18px;
+    }
+
+    .text-part p{
+        font-size: 16px;
+    }
+
+    .services-entreprise{
+        padding: 5% 6% 5% 6%;
+    }
+
+    .services-entreprise h1{
+        font-size: 30px;
+    }
+    .services-entreprise .col-3, .services-entreprise .col-4, .services-entreprise .col-12{
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+/* Handle */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 32, 80, 0.8);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 27, 37, 0.4);
+}
+
+.contain {
+  background-color: rgba(230, 230, 230, 0.288);
+}
+
+.head-img {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 200px;
+  padding: 2% 6%;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.title-header h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.title-header h6 {
+  font-size: 25px;
+  color: white;
+  font-weight: normal;
+}
+
+.breadcrumb {
+  margin-top: 1%;
+  color: #fff;
+}
+
+.breadcrumb-item a,
+.breadcrumb-item .active {
+  color: #fff;
+}
+
+nav{
+  color: #fff;
+}

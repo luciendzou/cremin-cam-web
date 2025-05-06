@@ -1,0 +1,104 @@
+
+.story-1{
+    padding: 6% 6%;
+}
+
+.story-1 h1{
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.story-1 p {
+    color: black;
+    font-size: 22px;
+    padding: 2% 2%;
+    background-color: white;
+    border: none;
+}
+
+
+.section-creation{
+    padding: 0% 6%;
+}
+
+
+.section-creation h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.section-creation p{
+    width: 100%;
+    color: gray;
+    font-size: 14px;
+    padding: 2% 2%;
+    background-color: white;
+    border: none;
+    text-align: justify;
+    line-height: 0% 5%;
+}
+
+.section-creation .stepper{
+    margin-top: 4%;
+}
+
+.stepper .line {
+    width: 2px;
+    background-color: lightgrey !important;
+}
+
+.stepper .lead {
+    font-size: 1.1rem;
+}
+
+
+.story-pub{
+    width: 100%;
+    display: flex;
+}
+
+.story-pub .story-img-1{
+    width: 10%;
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-pub .story-img-2{
+    width: 10%;
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.story-pub .story-img-3{
+    width: 10%;
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-pub .story-text{
+    width: 70%;
+    padding: 3% 6%;
+    background-color: rgba(163, 213, 247, 0.151);
+}
+
+.story-pub .story-text h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: orange;
+}
+
+.story-pub .story-text p{
+    font-size: 18px;
+    width: 80%;
+    font-weight: normal;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 5%;
+}

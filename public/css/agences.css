@@ -1,0 +1,322 @@
+
+.agences{
+    width: 100%;
+    padding: 5% 6%;
+}
+
+.agences h1{
+    font-size: 40px;
+    margin-bottom: 5%;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.agences .row .card{
+    width: 100%;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 6px #ccc;
+    padding: 3%;
+}
+
+.agences .row .card i{
+    margin-right: 4%;
+}
+
+.agences .row .card span{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    display: block;
+}
+
+.yaounde-img-text{
+    margin-top: 5%;
+}
+
+.yaounde-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.yaounde-text{
+    padding: 4% 6%;
+    text-align: center;
+    color: #000;
+    background-color: white;
+}
+
+.yaounde-text .fa-confluence{
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.yaounde-text h3{
+    font-size: 24px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.yaounde-text p{
+    font-size: 18px;
+    padding: 0% 8%;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.yaounde-text a{
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.yaounde-solutions{
+    margin-top: 8%;
+}
+
+
+.yaounde-solutions .carte{
+    background-color: white;
+    width: 90%;
+    box-shadow: 0 0 6px #ccc;
+}
+
+.yaounde-solutions .carte .img-carte{
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.yaounde-solutions .carte .text-carte{
+    background-color: white;
+    width: 100%;
+    padding: 4% 5%;
+    color: #000;
+}
+
+.yaounde-solutions .carte .text-carte h3{
+    color: #0079ca;
+    font-size: 18px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+.yaounde-solutions .carte .text-carte p{
+    margin-top: 2%;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.contacte-agence{
+    margin-top: 5%;
+    background-color: white;
+}
+
+.contacte-agence h1{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.contacte-agence .col-6{
+    padding: 0% 4% 2% 4%;
+    text-align: start;
+}
+
+.contacte-agence .col-7{
+    padding: 0% 4% 2% 4%;
+    text-align: start;
+}
+
+.contacte-agence .col-6 p{
+    color: #000;
+    font-size: 18px;
+    margin: 1% 0%;
+}
+
+.contacte-agence .col-7 p{
+    color: #000;
+    font-size: 16px;
+    margin: 1% 0%;
+}
+
+.contacte-agence .col-6 p a{
+    color: #000;
+    margin: 0%;
+}
+
+.contacte-agence .col-7 p a{
+    color: #000;
+    margin: 0%;
+}
+
+.contacte-agence .col-6 h4{
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 8%;
+    font-weight: bold;
+}
+
+.contacte-agence .col-6 h5{
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 8%;
+}
+
+.contacte-agence .col-7 h5{
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 6%;
+}
+
+.contacte-agence .col-7 h4{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 8%;
+}
+
+.cont-ag-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacte-agence .d-flex{
+    margin-top: 6%;
+}
+
+
+@media screen and (max-width: 360px){
+    
+    .agences h1{
+        font-size: 30px;
+    }
+
+    .agences .row .col-3{
+        width: 100%;
+    }
+
+    .agences .row .card{
+        text-align: start;
+    }
+
+    .yaounde-img-text{
+        margin-top: 8%;
+    }
+
+    .yaounde-img-text .col-6{
+        width: 100%;
+    }
+    
+    .yaounde-solutions .carte{
+        width: 100%;
+    }
+
+    .contacte-agence{
+        margin-top: 8%;
+    }
+
+    .contacte-agence h1{
+        font-size: 30px;
+    }
+
+    .contacte-agence .col-6{
+        width: 100%;
+    }
+
+    .contacte-agence .d-flex{
+        margin-bottom: 4%;
+    }
+
+
+}
+
+@media screen and (max-width: 415px){
+    
+    .agences h1{
+        font-size: 30px;
+    }
+
+    .agences .row .col-3{
+        width: 100%;
+    }
+
+    .agences .row .card{
+        text-align: start;
+    }
+
+    .yaounde-img-text{
+        margin-top: 8%;
+    }
+
+    .yaounde-img-text .col-6{
+        width: 100%;
+    }
+    
+    .yaounde-solutions .carte{
+        width: 100%;
+    }
+
+    .contacte-agence{
+        margin-top: 8%;
+    }
+
+    .contacte-agence h1{
+        font-size: 30px;
+    }
+
+    .contacte-agence .col-6{
+        width: 100%;
+    }
+
+    .contacte-agence .d-flex{
+        margin-bottom: 4%;
+    }
+
+}
+
+@media screen and (max-width: 601px){
+    
+    .agences h1{
+        font-size: 30px;
+    }
+
+    .agences .row .col-3{
+        width: 50%;
+    }
+
+    .agences .row .card{
+        text-align: start;
+    }
+
+    .yaounde-img-text{
+        margin-top: 8%;
+    }
+
+    .yaounde-img-text .col-6{
+        width: 100%;
+    }
+    
+    .yaounde-solutions .carte{
+        width: 100%;
+    }
+
+    .contacte-agence{
+        margin-top: 8%;
+    }
+
+    .contacte-agence h1{
+        font-size: 30px;
+    }
+
+    .contacte-agence .col-6{
+        width: 100%;
+    }
+
+    .contacte-agence .d-flex{
+        margin-bottom: 4%;
+    }
+}

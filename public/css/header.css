@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#topbar{
+    background-color: rgba(209, 209, 209, 0.123);
+}
+
+#topbar .container-fluid{
+    padding: 1% 6%;
+}
+
+#topbar .container-fluid .contact-info {
+    font-size: 14px;
+    margin: 0% 0px 0px 4px;
+    font-weight: normal;
+    padding: 0;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.contact-info a{text-decoration: none;}
+
+#topbar .social-links .facebook:hover{
+    color: rgb(2, 122, 221) !important;
+}
+
+#topbar .social-links .instagram:hover{
+    color: rgb(221, 2, 130);
+}
+
+#topbar .social-links .linkedin:hover{
+    color: rgb(1, 77, 139);
+}
+
+#topbar .social-links .youtube:hover{
+    color: rgb(221, 2, 39);
+}
+
+
+/*---------------Entête----------------------------*/
+#header {
+    position: relative;
+    top: 0px;
+}
+
+#header  .container-fluid{
+    padding: 2% 6% 2% 6%;
+}
+
+#header .logo img{
+    width: 90%;
+}
+
+#header #navbar li{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: normal !important;
+}
+
+#navbar a, .appointment-btn, .appointment-btn-round{
+    text-decoration: none;
+    font-style: normal;
+}
+
+.appointment-btn{
+    background-color: rgb(2, 110, 199);
+    color: white;
+    padding: 1% 2%;
+    display: block;
+}
