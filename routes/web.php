@@ -31,6 +31,10 @@ Route::get('/crem-products', function () {
 
 
 // Products CREMIN-CAM
-Route::get('/crem-mobile-banking', function () {
+Route::get('/products/crem-mobile-banking', function () {
     return view('product.mobile_banking');
+});
+
+Route::get('/products/crem-visa-card', function () {
+    return view('product.visa');
 });

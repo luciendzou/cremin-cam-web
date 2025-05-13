@@ -67,3 +67,105 @@
     width: 100%;
     fill : red
 }
+
+.section-header-products-details{
+    display: block;
+    padding: 2rem 6rem;
+    background-color: #01081a;
+
+    .text-head-product-details{
+        display: block;
+        width: 100%;
+        padding: 1rem 6rem;
+
+        h1{
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+
+        p{
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 1px 8rem;
+            margin-top: 0;
+        }
+
+    }
+}
+
+.section_products-client .btn-solo-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    width: 230px;
+    margin-top: 2rem;
+}
+
+.section_products-client .btn-solo-product:hover{
+    background-color: white;
+    color: #01182e;
+}
+
+.link-product:hover{
+    color: #01182e !important;
+}
+
+.section_solo-uses .subtitle{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.section_solo-uses .card-body{
+    display: block;
+    padding: 0.5rem;
+
+    i{
+        font-size: 30px;
+        width: 100%;
+        color: #000;
+    }
+
+    span{
+        font-size: 20px;
+        margin-top: 0.8rem;
+        display: block;
+    }
+
+    p{
+        margin-top: 0.5rem;
+        font-size: 13px;
+        text-align: justify;
+    }
+}
+
+.section_solo-uses .card:hover{
+    background-color: white;
+    color: #000;
+
+    p{
+        color: #000;
+    }
+}
+
+.orther-solutions .card:hover{
+    background-color: white;
+    color: #000;
+}
+
+.orther-solutions .heading-style-h1{
+    font-weight: bold;
+}
+
+.other-solutions-title{
+    font-size: 20px;
+    font-weight: 800;
+}

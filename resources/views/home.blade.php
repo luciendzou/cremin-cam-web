@@ -135,6 +135,39 @@
         </div>
         <div class="about-header-bg"></div>
     </div>
+    <section class="details-home">
+        <div class="row">
+            <div class="col-3">
+                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-body">
+                        <i class="fas fa-hands-helping me-4"></i> Solidarité
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="250">
+                    <div class="card-body">
+                        <i class="fas fa-handshake me-4"></i> Egalité
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card-body">
+                        <i class="fas fa-gavel me-4"></i> Intégrité
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body">
+                        <i class="fas fa-award me-4"></i> Performance
+                    </div>
+                </div>
+            </div>
+            <p></p>
+        </div>
+    </section>
     <div class="section-regular" style="margin-top: 6%; margin-bottom: 1% !important;">
         <div data-w-id="697c3703-c243-502c-9917-758c8360a7bc" class="about-content-background-color"></div>
         <div class="container-regular">
