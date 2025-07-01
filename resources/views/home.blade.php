@@ -48,7 +48,7 @@
     </div>
 
     <section class="partner">
-        <h2>La confiance de plus de 10 clients et de plus de 5000 clients</h2>
+        <h2>La confiance de plus de 10 partenaires et de plus de 5000 clients</h2>
         <span>Notre expertise et notre fiabilité sont reconnues. Faites
             confiance à notre savoir-faire pour répondre à vos besoins avec efficacité et professionnalisme.</span>
         <div class="partner-scroll-container">
@@ -137,35 +137,57 @@
     </div>
     <section class="details-home">
         <div class="row">
-            <div class="col-3">
-                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-body">
-                        <i class="fas fa-hands-helping me-4"></i> Solidarité
+            <div class="col-12">
+                <h1>Bienvenue au <b>Crédit Mutuel d'Investissement du Cameroun</b></h1>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <p class="details-home-title"><i class="fas fa-hands-helping me-4"></i> Solidarité</p>
+                                <p>Nous sommes une institution financière qui met l'accent sur la coopération et
+                                    l'entraide. Nous croyons que la solidarité est la clé du succès, et nous nous
+                                    engageons à travailler ensemble.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="250">
+                            <div class="card-body">
+                                <p class="details-home-title"><i class="fas fa-handshake me-4"></i> Egalité</p>
+                                <p>Nous traitons tous nos membres et partenaires avec équité et respect, sans distinction
+                                    de race, de religion, de sexe ou d'origine sociale. Nous nous engageons à offrir les
+                                    mêmes opportunités à tous.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="150">
+                            <div class="card-body">
+                                <p class="details-home-title"><i class="fas fa-gavel me-4"></i> Intégrité</p>
+                                <p>Nous agissons avec honnêteté, transparence et respect des principes éthiques les plus
+                                    élevés. Notre engagement envers l'intégrité garantit des relations de confiance avec
+                                    nos membres et partenaires.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body">
+                                <p class="details-home-title"><i class="fas fa-award me-4"></i> Performance</p>
+                                <p>Nous visons l'excellence dans tous nos services. Grâce à une gestion rigoureuse et
+                                    une recherche constante d'amélioration, nous garantissons des résultats optimaux
+                                    pour nos membres et partenaires.</p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="250">
-                    <div class="card-body">
-                        <i class="fas fa-handshake me-4"></i> Egalité
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="150">
-                    <div class="card-body">
-                        <i class="fas fa-gavel me-4"></i> Intégrité
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-body">
-                        <i class="fas fa-award me-4"></i> Performance
-                    </div>
-                </div>
-            </div>
-            <p></p>
         </div>
     </section>
     <div class="section-regular" style="margin-top: 6%; margin-bottom: 1% !important;">
@@ -214,9 +236,10 @@
     </div>
 
 
-    <section class="section-regular-2 mt-4" style="background-color: rgba(230, 230, 230, 0.288); padding: 40px 5% 10px 5% !important">
+    <section class="section-regular-2 mt-4"
+        style="background-color: rgba(230, 230, 230, 0.288); padding: 5rem 5% 10px 5% !important">
         <h1 class="h3-heading">Pourquoi choisir CREMIN-CAM</h1>
-        <div class="container">
+        <div class="container choised">
             <div class="card-container">
                 <div class="card">
                     <div class="card-header">
@@ -293,7 +316,7 @@
                     <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
                         <div class="count-box py-5">
                             <i class="bi bi-award"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="22" class="purecounter">0</span>
+                            <span data-purecounter-start="0" data-purecounter-end="5" class="purecounter">0</span>
                             <p>Awards</p>
                         </div>
                     </div>

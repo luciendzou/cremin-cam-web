@@ -65,20 +65,20 @@
 .product-country_icon-wrapper img {
     filter: grayscale(100%);
     width: 100%;
-    fill : red
+    fill: red;
 }
 
-.section-header-products-details{
+.section-header-products-details {
     display: block;
     padding: 2rem 6rem;
     background-color: #01081a;
 
-    .text-head-product-details{
+    .text-head-product-details {
         display: block;
         width: 100%;
         padding: 1rem 6rem;
 
-        h1{
+        h1 {
             font-size: 40px;
             color: white;
             text-align: center;
@@ -86,18 +86,77 @@
             margin-bottom: 0;
         }
 
-        p{
+        p {
             font-size: 14px;
             color: white;
             text-align: center;
             padding: 1px 8rem;
             margin-top: 0;
         }
-
     }
 }
 
-.section_products-client .btn-solo-product{
+.section_services-client {
+    padding: 1rem 5rem 4rem 5rem;
+    background-color: #fff;
+}
+
+.section_services-client .carte-for-service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.section_services-client .carte-for-service .img-carte {
+    width: 25%;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0 0;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.section_services-client .carte-for-service .text-carte {
+    display: block;
+    width: 60%;
+    padding: 3rem 1rem;
+
+    .sub-desc {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+
+    a {
+        color: #fff;
+        margin-top: 1rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        background-color: #01182e;
+        padding: 0.5rem 1.5rem;
+        border-radius: 5px;
+    }
+}
+
+.section_services-client .carte-for-service p {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.section_products-client .btn-solo-product {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,64 +167,63 @@
     margin-top: 2rem;
 }
 
-.section_products-client .btn-solo-product:hover{
+.section_products-client .btn-solo-product:hover {
     background-color: white;
     color: #01182e;
 }
 
-.link-product:hover{
+.link-product:hover {
     color: #01182e !important;
 }
 
-.section_solo-uses .subtitle{
+.section_solo-uses .subtitle {
     font-size: 18px;
     text-align: center;
     width: 100%;
-
 }
 
-.section_solo-uses .card-body{
+.section_solo-uses .card-body {
     display: block;
     padding: 0.5rem;
 
-    i{
+    i {
         font-size: 30px;
         width: 100%;
         color: #000;
     }
 
-    span{
+    span {
         font-size: 20px;
         margin-top: 0.8rem;
         display: block;
     }
 
-    p{
+    p {
         margin-top: 0.5rem;
         font-size: 13px;
         text-align: justify;
     }
 }
 
-.section_solo-uses .card:hover{
+.section_solo-uses .card:hover {
     background-color: white;
     color: #000;
 
-    p{
+    p {
         color: #000;
     }
 }
 
-.orther-solutions .card:hover{
+.orther-solutions .card:hover {
     background-color: white;
     color: #000;
 }
 
-.orther-solutions .heading-style-h1{
+.orther-solutions .heading-style-h1 {
     font-weight: bold;
 }
 
-.other-solutions-title{
+.other-solutions-title {
     font-size: 20px;
     font-weight: 800;
 }

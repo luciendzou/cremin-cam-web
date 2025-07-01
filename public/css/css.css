@@ -22,7 +22,7 @@
 }
 
 .partner {
-    padding: 10px 0 100px 0; /* Vertical padding */
+    padding: 3rem 0 100px 0; /* Vertical padding */
     background-color: #f8f9fa; /* Optional background */
     position: relative; /* Good practice for positioning contexts */
 }
@@ -42,16 +42,27 @@
     margin-bottom: 5%;
     font-size: 1rem;
     font-weight: 300;
-    padding:  0 25%;
+    padding: 0 25%;
 }
-
 
 .partner-scroll-container {
     overflow: hidden; /* THIS IS KEY: Hides the content outside the container */
     width: 100%;
     /* Optional: Add fading edges for a smoother look */
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+    );
 }
 
 .partner .grid {
@@ -83,7 +94,7 @@
 
 .partner .grid-item {
     flex-shrink: 0; /* Prevents items from shrinking */
-    width: 180px; /* Adjust width per logo */
+    width: 150px; /* Adjust width per logo */
     height: 100px; /* Adjust height per logo */
     margin: 0 30px; /* Horizontal spacing between logos */
     display: flex;
@@ -99,6 +110,7 @@
     max-width: 140px; /* Max width for logos */
     width: auto;
     height: auto;
+    border-radius: 10px;
     object-fit: contain; /* Scales image while preserving aspect ratio */
     filter: grayscale(100%); /* Start as grayscale */
     opacity: 0.7; /* Slightly faded */
@@ -110,7 +122,6 @@
     filter: grayscale(0%); /* Show color */
     opacity: 1; /* Full opacity */
 }
-
 
 .header-title-wrap {
     -webkit-transform: translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0)
@@ -217,7 +228,6 @@
     line-height: 1.6;
 }
 
-
 /* Styling for the card container */
 .card-container {
     display: grid;
@@ -250,15 +260,19 @@
     color: #fff;
     cursor: pointer;
 
-    .card-header i{
+    .card-header {
+        background-color: #0060dd !important;
+    }
+
+    .card-header i {
         color: #fff;
     }
 
-    .card-header h3{
+    .card-header h3 {
         color: #fff;
     }
 
-    .card-body p{
+    .card-body p {
         color: #fff;
     }
 }
@@ -269,6 +283,7 @@
     display: block;
     align-items: center;
     gap: 15px;
+    background-color: white !important;
 }
 
 /* Styling for the card icon */
@@ -302,13 +317,11 @@
     flex-grow: 1;
 }
 
-
 .choose {
     padding: 2% 6% 5% 6%;
     background-color: rgba(230, 230, 230, 0.288);
     position: relative;
 }
-
 
 .count-box i {
     font-size: 48px;
@@ -334,4 +347,163 @@
     font-weight: 600;
     font-size: 14px;
     color: #646c55;
+}
+
+.section-about-header{
+    margin-bottom: 5rem;
+}
+
+/*Services pages*/
+.services-one{
+    padding: 6rem 6rem;
+}
+
+.services-one h1{
+    width: 60%;
+    font-weight: 900;
+}
+
+.services-one p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.services-one .services-list{
+    margin-top: 6rem;
+}
+
+.services-one .services-list .carte-services{
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 5px;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    height: 200px;
+    cursor: pointer;
+}
+
+.services-one .services-list .carte-services h5{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.services-one .services-list .carte-services p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.services-two{
+    padding: 6rem 6rem;
+    background-color: #f8f9fa;
+}
+
+.services-two h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.services-two p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.services-two .services-list{
+    margin-top: 4rem;
+}
+
+.services-two .services-list .carte-services{
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/** Projects Pages **/
+.projects{
+    padding: 4rem 6rem;
+    background-color: #f8f9fa;
+}
+
+.projects h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.projects p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.projects .projects-list{
+    margin-top: 4rem;
+}
+
+.projects .projects-list .carte-projects{
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    height: 250px;
+    cursor: pointer;
+}
+
+.projects .projects-list .carte-projects h5{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.projects .projects-list .carte-projects p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/***Agences Pages***/
+.agences{
+    padding: 8rem 6rem;
+    background-color: #fff;
+}
+
+.agences h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.agences p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.agences .carte-agences{
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.agences .carte-agences h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.agences .img-agences{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    border-radius: 10px;
 }

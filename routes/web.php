@@ -29,6 +29,18 @@ Route::get('/crem-products', function () {
     return view('product.product');
 });
 
+Route::get('/crem-services', function () {
+    return view('services.services');
+});
+
+Route::get('/crem-branches', function () {
+    return view('branch');
+});
+
+Route::get('/crem-contact', function () {
+    return view('contact');
+});
+
 
 // Products CREMIN-CAM
 Route::get('/products/crem-mobile-banking', function () {

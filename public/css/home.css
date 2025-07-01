@@ -80,18 +80,21 @@
 .details-home {
     padding: 4% 6%;
     margin-bottom: 4%;
+    background-color: rgba(230, 230, 230, 0.288);
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.0001px;
 }
 
 
 .details-home h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-}
 
-.details-home .row {
-    margin-top: 4%;
+    b{
+        color: black;
+    font-size: 40px;
+    display: block;
+    }
 }
 
 .details-home .row .card {
@@ -99,15 +102,15 @@
     border: none;
 }
 
-.details-home .row .card-body {
-    font-size: 150%;
+.details-home .row .card-body .details-home-title{
     text-decoration: none;
-    color: #0478fc;
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.details-home .row .card:hover, .details-home .row .card-body:hover {
-    background-color: #ffffff;
-    color: #0478fc;
+.details-home .row .card-body p{
+    font-size: 14px;
+    margin-top: 1rem;
 }
 
 
@@ -356,18 +359,19 @@
         text-align: center;
     }
 
-    .details-home h1 {
-        font-size: 30px;
-    }
-
     .details-home .row .col-3 .card-body{
         width: 100%;
-        color: #0478fc !important;
+        color: #0000 !important;
     }
 
     .details-home .row .col-3 .card-body:hover{
-        color: #ffffff !important;
+        color: #000 !important;
     }
+
+    .details-home .paragraph-small{
+        font-size: 12px;
+    }
+
 
     .img-smile-home .col-6{
         width: 100%;
