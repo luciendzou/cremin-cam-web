@@ -178,7 +178,7 @@
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
 
-                <a href="#appointment" class="appointment-btn">J'ouvre un compte</a>
+                <a href="#" onclick="window.location = 'apk/solo-cremincam.apk';" target="_blank" class="appointment-btn" >SOLO BY CREMIN-CAM</a>
 
             </div>
         </header><!-- End Header -->
