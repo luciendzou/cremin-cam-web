@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +44,9 @@ Route::get('/crem-contact', function () {
     return view('contact');
 });
 
+Route::get('/contact-us', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact-us', [ContactController::class, 'submit'])->name('contact.submit');
+
 
 // Products CREMIN-CAM
 Route::get('/products/crem-mobile-banking', function () {
@@ -50,3 +56,5 @@ Route::get('/products/crem-mobile-banking', function () {
 Route::get('/products/crem-visa-card', function () {
     return view('product.visa');
 });
+
+

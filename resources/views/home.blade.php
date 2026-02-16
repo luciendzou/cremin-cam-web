@@ -12,7 +12,7 @@
                             <p class="paragraph-small">Nous vous accompagnons à chaque étape, de la structuration de votre
                                 concept à la réalisation de votre projet, en vous proposant des offres et solutions
                                 financières adaptées à vos besoins.</p>
-                        </div><a href="/crem-contact-us" class="button-primary-right-icon-2 w-inline-block">
+                        </div><a href="/crem-contact" class="button-primary-right-icon-2 w-inline-block">
                             <div>Contactez nous</div>
                             <div class="icon-regular button w-embed">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -126,10 +126,10 @@
                 </p>
             </div>
             <div class="flex-row">
-                <div class="option" style="background-image: url({{ asset('images/home/option-1.jpg') }})"></div>
-                <div class="option" style="background-image: url({{ asset('images/home/option-2.jpg') }})"></div>
-                <div class="option" style="background-image: url({{ asset('images/home/option-3.jpg') }})"></div>
-                <div class="option" style="background-image: url({{ asset('images/home/option-4.jpg') }})"></div>
+                <div class="option" style="background-image: url('{{ asset("images/home/option-1.jpg") }}')"></div>
+                <div class="option" style="background-image: url('{{ asset("images/home/option-2.jpg") }}')"></div>
+                <div class="option" style="background-image: url('{{ asset("images/home/option-3.jpg") }}')"></div>
+                <div class="option" style="background-image: url('{{ asset("images/home/option-4.jpg") }}')"></div>
             </div>
 
         </div>
@@ -190,7 +190,7 @@
             </div>
         </div>
     </section>
-    <div class="section-regular" style="margin-top: 6%; margin-bottom: 1% !important;">
+    <div class="section-regular" style="margin-top: 6%; margin-bottom : 1% !important;">
         <div data-w-id="697c3703-c243-502c-9917-758c8360a7bc" class="about-content-background-color"></div>
         <div class="container-regular">
             <div class="w-layout-grid about-content-grid">
@@ -325,4 +325,95 @@
             </div>
         </div>
     </section>
+
+    {{-- Floating Video Widget --}}
+    <div class="floating-video-container" id="floatingVideo">
+        <button class="btn-close-video" onclick="document.getElementById('floatingVideo').style.display='none'" aria-label="Fermer">
+            <i class="fas fa-times"></i>
+        </button>
+        <iframe id="floatingIframe" width="100%" height="100%" src="https://www.youtube.com/embed/yiY9H14d80w?si=alIlzPiANvnHu3FN" title="Présentation CREMIN-CAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <div class="video-switcher">
+            <button class="switcher-btn active" onclick="switchFloatingVideo('https://www.youtube.com/embed/yiY9H14d80w?si=alIlzPiANvnHu3FN', this)">1</button>
+            <button class="switcher-btn" onclick="switchFloatingVideo('https://www.youtube.com/embed/3qndnqsImqw?si=e-RYFHme7XsaoVY4', this)">2</button>
+        </div>
+    </div>
+
+    <style>
+        .floating-video-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 520px;
+            height: 280px;
+            z-index: 9990;
+            background: #000;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+            border: 3px solid #fff;
+            overflow: hidden;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .btn-close-video {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border: none;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom-left-radius: 8px;
+            z-index: 10;
+        }
+        .btn-close-video:hover {
+            background: #dc3545;
+        }
+        @media (max-width: 576px) {
+            .floating-video-container {
+                width: 280px;
+                height: 158px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+        .video-switcher {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 20;
+        }
+        .switcher-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        .switcher-btn:hover, .switcher-btn.active {
+            background: #fff;
+            color: #000;
+        }
+    </style>
+    <script>
+        function switchFloatingVideo(url, btn) {
+            document.getElementById('floatingIframe').src = url;
+            document.querySelectorAll('.switcher-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    </script>
 @endsection

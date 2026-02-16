@@ -112,3 +112,151 @@
     font-size: 40px;
     margin-bottom: 5%;
 }
+.team .card {
+    background-color: transparent;
+    border: none;
+}
+
+.team .card-img-top {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.team .card-text {
+    font-size: 14px;
+    color: #555;
+}
+
+@media screen and (max-width: 360px) {
+    .about-1 h2 {
+        font-size: 25px;
+    }
+
+    .about-1 p {
+        font-size: 16px;
+        padding: 4% 4%;
+    }
+
+    .title-2-about,
+    .title-3-about {
+        font-size: 25px;
+    }
+
+    .services-about .col-4 {
+        width: 100%;
+    }
+
+    .organigrame h2 {
+        font-size: 25px;
+    }
+
+    .text-organi h3 {
+        font-size: 20px;
+    }
+
+    .text-organi p {
+        font-size: 12px;
+        margin: 2% 8%;
+    }
+
+    .team h1 {
+        font-size: 25px;
+    }
+
+    .team .col-lg-3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .about-1 h2 {
+        font-size: 30px;
+    }
+
+    .about-1 p {
+        font-size: 18px;
+        padding: 4% 4%;
+    }
+
+    .title-2-about,
+    .title-3-about {
+        font-size: 30px;
+    }
+
+    .services-about .col-4 {
+        width: 100%;
+    }
+
+    .organigrame h2 {
+        font-size: 30px;
+    }
+
+    .text-organi h3 {
+        font-size: 22px;
+    }
+
+    .text-organi p {
+        font-size: 14px;
+        margin: 2% 8%;
+    }
+
+    .team h1 {
+        font-size: 30px;
+    }
+
+    .team .col-lg-3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .about-1 h2 {
+        font-size: 30px;
+    }
+
+    .about-1 p {
+        font-size: 18px;
+        padding: 4% 4%;
+    }
+
+    .title-2-about,
+    .title-3-about {
+        font-size: 30px;
+    }
+
+    .services-about .col-4 {
+        width: 50%;
+    }
+
+    .organigrame h2 {
+        font-size: 30px;
+    }
+
+    .text-organi h3 {
+        font-size: 22px;
+    }
+
+    .text-organi p {
+        font-size: 14px;
+        margin: 2% 8%;
+    }
+
+    .team h1 {
+        font-size: 30px;
+    }
+
+    .team .col-lg-3 {
+        width: 50%;
+    }
+}

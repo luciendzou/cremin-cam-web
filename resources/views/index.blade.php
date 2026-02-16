@@ -101,36 +101,47 @@
 
 <body>
     <div class="page-wrapper">
-        <div fs-cc="banner" class="cookie-popup_component">
-            <div class="cookie-modal_component">
-                <div class="cookie-modal_styles w-embed">
-                    <style>
-                        .ck-preference__scroll-w::-webkit-scrollbar {
-                            display: none;
-                        }
-
-                        .ck-preference__scroll-w {
-                            -ms-overflow-style: none;
-                            scrollbar-width: none;
-                        }
-                    </style>
+        <div fs-cc="banner" class="cookie-popup_component cookie--hidden" role="dialog" aria-live="polite" aria-label="Cookie consent banner" aria-modal="false">
+            <div class="cookie-modal_inner">
+                <div class="cookie-icon" aria-hidden="true">
+                    <img src="{{ asset('images/icon/cremin.png') }}" alt="CREMIN-CAM" />
                 </div>
-                <div class="cookie-modal_content-wrap is-small">
-                    <div class="cookie-modal_description">En cliquant sur « Tout accepter », vous consentez à ce que
-                        nous et nos
-                        partenaires utilisions les témoins et d’autres technologies similaires sur nos sites. Ces
-                        technologies peuvent
-                        receuillir des renseignements sur vous, y compris sur vos habitudes de navigation, afin
-                        d’améliorer
-                        l’expérience de navigation, d’analyser l’utilisation des sites et de mieux cibler nos
-                        initiatives de
-                        marketing.
-                        <a href="/crem-policy">Politique de confidentialité</a>.
-                    </div><a fs-cc="allow" href="#" class="button-primary w-inline-block">
-                        <div class="cookie-modal_button_text">Accepter</div>
-                    </a>
+                <div class="cookie-content">
+                    <p class="cookie-text">
+                        En cliquant sur <strong>Accepter</strong>, vous consentez à ce que nous et nos partenaires utilisions des témoins (cookies) et technologies similaires pour améliorer l’expérience, analyser l’utilisation et personnaliser le marketing.
+                        <a href="/crem-policy" target="_blank" rel="noopener">Politique de confidentialité</a>.
+                    </p>
+                    <div class="cookie-actions" role="group" aria-label="Cookie actions">
+                        <button type="button" data-cc-decline class="btn btn-cookie btn-secondary">Refuser</button>
+                        <button type="button" data-cc-accept class="btn btn-cookie btn-primary">Accepter</button>
+                        <a href="/crem-policy" class="cookie-preferences" target="_blank" rel="noopener">Gérer les préférences</a>
+                    </div>
                 </div>
+                <button class="cookie-close" aria-label="Fermer">&times;</button>
             </div>
+
+            <style>
+                .cookie-popup_component { position: fixed; inset: auto 16px 16px 16px; z-index: 9999; max-width: 980px; margin: 0 auto; background: #fff; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); padding: 16px; transition: transform .36s ease, opacity .36s ease; opacity:0; transform: translateY(12px); }
+                .cookie-popup_component.cookie--visible { opacity:1; transform: translateY(0); }
+                .cookie-modal_inner { display:flex; gap:12px; align-items:center; }
+                .cookie-icon img{ width:48px; height:48px; border-radius:8px; object-fit:cover; }
+                .cookie-content { flex:1 1 auto; min-width: 0; }
+                .cookie-text { margin:0 0 8px 0; font-size:14px; color:#333; line-height:1.35; }
+                .cookie-actions { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+                .btn-cookie { padding:8px 14px; border-radius:8px; font-weight:600; cursor:pointer; border:1px solid transparent; transition: background .18s, transform .12s; }
+                .btn-cookie:focus{ outline:3px solid rgba(13,110,253,0.12); outline-offset:2px; }
+                .btn-primary { background:#0d6efd; color:#fff; border-color:#0d6efd; }
+                .btn-secondary { background:transparent; color:#333; border:1px solid #ddd; }
+                .cookie-preferences { font-size:13px; color:#6c757d; text-decoration:underline; margin-left:6px; }
+                .cookie-close { background:transparent; border:0; font-size:20px; line-height:1; color:#777; padding:6px; margin-left:8px; cursor:pointer; }
+                .cookie-close:focus{ outline:3px solid rgba(0,0,0,0.06); border-radius:6px; }
+                @media (max-width:720px){
+                    .cookie-modal_inner{ flex-direction:column; align-items:stretch; gap:10px; }
+                    .cookie-icon{ align-self:flex-start; }
+                    .cookie-actions{ justify-content:flex-start; }
+                    .cookie-popup_component{ right:12px; left:12px; padding:12px; }
+                }
+            </style>
         </div>
 
         <header id="header" class="mt-0 shadow-sm pt-0" data-aos="fade">
@@ -155,7 +166,7 @@
             </div>
             <div class="container-fluid d-flex align-items-center">
                 <a href="/" class="logo me-auto"><img src="{{ asset('images/logo/cremincam.png') }}"
-                        alt="" class="img-fluid"></a>
+                        alt="" class="img-fluid" style="width:20%;"></a>
 
                 <nav id="navbar" class="navbar order-last order-lg-0" style="border-bottom: none !important">
                     <ul>
@@ -173,7 +184,7 @@
                                 <li class="border-top"><a href="/job-submit">Faire Carrière</a></li>
                             </ul>
                         </li>
-                        <li><a class="nav-link p-0" href="/crem-mag">Contact us</a></li>
+                        <li><a class="nav-link p-0" href="/crem-contact">Contact us</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
@@ -298,6 +309,61 @@
         type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+    <script>
+        (function(){
+            var COOKIE_NAME = 'cremin_cookie_consent';
+            var banner = document.querySelector('[fs-cc="banner"]');
+            if (!banner) return;
+
+            function hideBanner(){ banner.classList.remove('cookie--visible'); setTimeout(function(){ banner.style.display='none'; }, 360); }
+            function showBanner(){ banner.style.display='block'; requestAnimationFrame(function(){ banner.classList.add('cookie--visible'); }); }
+
+            function getConsent(){
+                if (window.Cookies && Cookies.get) return Cookies.get(COOKIE_NAME);
+                var m = document.cookie.match(new RegExp('(^| )' + COOKIE_NAME + '=([^;]+)'));
+                return m ? decodeURIComponent(m[2]) : undefined;
+            }
+            function setConsent(value){
+                if (window.Cookies && Cookies.set) {
+                    Cookies.set(COOKIE_NAME, value, { expires: 365, path: '/' });
+                } else {
+                    var expires = new Date(); expires.setDate(expires.getDate() + 365);
+                    document.cookie = COOKIE_NAME + '=' + encodeURIComponent(value) + '; expires=' + expires.toUTCString() + '; path=/';
+                }
+            }
+
+            // initial state
+            var consent = getConsent();
+            if (consent === 'accepted' || consent === 'declined') {
+                banner.style.display = 'none';
+            } else {
+                showBanner();
+            }
+
+            // controls
+            var btnAccept = banner.querySelector('[data-cc-accept]');
+            var btnDecline = banner.querySelector('[data-cc-decline]');
+            var btnClose = banner.querySelector('.cookie-close');
+
+            if (btnAccept) btnAccept.addEventListener('click', function(e){
+                e.preventDefault(); setConsent('accepted'); hideBanner();
+                // TODO: activer trackers si nécessaire
+            });
+            if (btnDecline) btnDecline.addEventListener('click', function(e){
+                e.preventDefault(); setConsent('declined'); hideBanner();
+                // TODO: désactiver trackers si nécessaire
+            });
+            if (btnClose) btnClose.addEventListener('click', function(e){
+                e.preventDefault(); hideBanner();
+            });
+
+            // accessible keyboard: ESC ferme
+            document.addEventListener('keydown', function(e){
+                if (e.key === 'Escape' && banner.classList.contains('cookie--visible')) hideBanner();
+            });
+
+        })();
+    </script>
     <script type="text/javascript">
         (function(l) {
             if (!l) {
