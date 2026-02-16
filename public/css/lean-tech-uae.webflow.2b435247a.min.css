@@ -2506,9 +2506,9 @@ a:hover {
     z-index: 1;
     width: 100%;
     max-width: 1140px;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    position: relative
 }
 
 .container-regular.lp-rocket {
@@ -2631,7 +2631,7 @@ a:hover {
     letter-spacing: -.02em;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.2
 }

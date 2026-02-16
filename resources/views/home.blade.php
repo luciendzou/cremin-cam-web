@@ -1,419 +1,424 @@
-@extends('index')
+﻿@extends('index')
 @section('content')
-    <div class="section-regular">
-        <div class="container-regular">
-            <div class="header-flex-row">
-                <div>
-                    <div data-w-id="71a25650-46b5-b891-5424-370df6257e90" class="header-title-wrap">
-                        <div class="margin-bottom-24">
-                            <h1 class="h2-heading">La meilleure MICROFINANCE qui soit au Cameroun</h1>
+<div class="section-regular">
+    <div class="container-regular">
+        <div class="header-flex-row">
+            <div class="header-title-wrap">
+                <div class="margin-bottom-24">
+                    <h1 class="h2-heading">La meilleure MICROFINANCE qui soit au Cameroun</h1>
+                </div>
+                <div class="margin-bottom-64 hero-home">
+                    <p class="paragraph-small">Nous vous accompagnons à chaque étape, de la structuration de votre
+                        concept à la réalisation de votre projet, en vous proposant des offres et solutions
+                        financières adaptées à vos besoins.</p>
+                </div><a href="/crem-contact" class="button-primary-right-icon-2 w-inline-block">
+                    <div>Contactez-nous</div>
+                    <div class="icon-regular button w-embed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M15.187 11.2362L11.0895 7.13873L12.1696 6.05859L18.1111 12.0001L12.1696 17.9416L11.0895 16.8615L15.187 12.764H5.88892V11.2362H15.187Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="header-right-wrap">
+                <div class="header-image-wrap-small" id="image-slideshow-container">
+                    <img src="{{ asset('images/home/option-1.jpg') }}" loading="lazy" alt="Financial planning meeting"
+                        class="image-cover-2 slideshow-image active" />
+
+                    {{-- Image 2: No 'active' class --}}
+                    <img src="{{ asset('images/home/option-2.jpg') }}" loading="lazy" alt="Customer receiving service"
+                        class="image-cover-2 slideshow-image" />
+
+                    {{-- Image 3: No 'active' class --}}
+                    <img src="{{ asset('images/home/option-3.jpg') }}" loading="lazy" alt="Investment growth chart"
+                        class="image-cover-2 slideshow-image" />
+
+                    {{-- Image 4: No 'active' class --}}
+                    <img src="{{ asset('images/home/option-4.jpg') }}" loading="lazy" alt="Business handshake agreement"
+                        class="image-cover-2 slideshow-image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="partner">
+    <h2>La confiance de plus de 10 partenaires et de plus de 5000 clients</h2>
+    <span>Notre expertise et notre fiabilité sont reconnues. Faites
+        confiance à notre savoir-faire pour répondre à vos besoins avec efficacité et professionnalisme.</span>
+    <div class="partner-scroll-container">
+        <div class="grid">
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/minfi.png') }}" alt="Partner 1">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/logodgtcfm.jpeg') }}" alt="Partner 2">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/mutresor.png') }}" alt="Partner 3">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/reccucam.png') }}" alt="Partner 4">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/nfc.jpg') }}" alt="Partner 5">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/saar.jpg') }}" alt="Partner 6">
+            </div>
+
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/bf_life_insurance.png') }}" alt="Partner 1">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/bicec.png') }}" alt="Partner 2">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/ecobank.png') }}" alt="Partner 3">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/UBA-logo-2.png') }}" alt="Partner 4">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/wafacash.png') }}" alt="Partner 5">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/Ria.png') }}" alt="Partner 6">
+            </div>
+
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/fodecc.jpg') }}" alt="Partner 1">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/woldremit.png') }}" alt="Partner 2">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/paytop.png') }}" alt="Partner 3">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/Campost_logo.png') }}" alt="Partner 4">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/Orange-Money.jpg') }}" alt="Partner 5">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('images/partner/mobile-money.jpg') }}" alt="Partner 6">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="about" class="section-about-header">
+    <div class="container-regular">
+        <div data-w-id="77ea9046-7f1a-c6ac-33b1-f8cfd084d020" class="w-layout-grid about-header">
+            <div class="header-content">
+                <h1 class="h1-heading sobre text-white">Votre satisfaction, notre priorité</h1>
+            </div>
+            <p class="paragraph-large text-white">
+                Nous vous offrons des services et solutions bancaires rapides et efficaces, de l'ouverture d'un
+                compte (salaire, épargne, parrainé, junior, entreprise) à la demande et d'obtention de votre prêt.
+                Ouvrez votre compte et profitez d'une expérience bancaire souriante et sans tracas.
+            </p>
+        </div>
+        <div class="flex-row">
+            <div class="option" style="background-image: url('{{ asset("images/home/option-1.jpg") }}')"></div>
+            <div class="option" style="background-image: url('{{ asset("images/home/option-2.jpg") }}')"></div>
+            <div class="option" style="background-image: url('{{ asset("images/home/option-3.jpg") }}')"></div>
+            <div class="option" style="background-image: url('{{ asset("images/home/option-4.jpg") }}')"></div>
+        </div>
+
+    </div>
+    <div class="about-header-bg"></div>
+</div>
+<section class="details-home">
+    <div class="row">
+        <div class="col-12">
+            <h1>Bienvenue au <b>Crédit Mutuel d'Investissement du Cameroun</b></h1>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-body">
+                            <p class="details-home-title"><i class="fas fa-hands-helping me-4"></i> Solidarité</p>
+                            <p>Nous sommes une institution financière qui met l'accent sur la coopération et
+                                l'entraide. Nous croyons que la solidarité est la clé du succès, et nous nous
+                                engageons à travailler ensemble.</p>
+
                         </div>
-                        <div class="margin-bottom-64 hero-home">
-                            <p class="paragraph-small">Nous vous accompagnons à chaque étape, de la structuration de votre
-                                concept à la réalisation de votre projet, en vous proposant des offres et solutions
-                                financières adaptées à vos besoins.</p>
-                        </div><a href="/crem-contact" class="button-primary-right-icon-2 w-inline-block">
-                            <div>Contactez nous</div>
-                            <div class="icon-regular button w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M15.187 11.2362L11.0895 7.13873L12.1696 6.05859L18.1111 12.0001L12.1696 17.9416L11.0895 16.8615L15.187 12.764H5.88892V11.2362H15.187Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </div>
-                        </a>
                     </div>
                 </div>
-                <div class="header-right-wrap">
-                    <div class="header-image-wrap-small" id="image-slideshow-container">
-                        <img src="{{ asset('images/home/option-1.jpg') }}" loading="lazy" alt="Financial planning meeting"
-                            class="image-cover-2 slideshow-image active" />
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="250">
+                        <div class="card-body">
+                            <p class="details-home-title"><i class="fas fa-handshake me-4"></i> Egalité</p>
+                            <p>Nous traitons tous nos membres et partenaires avec équité et respect, sans distinction
+                                de race, de religion, de sexe ou d'origine sociale. Nous nous engageons à offrir les
+                                mêmes opportunités à tous.</p>
 
-                        {{-- Image 2: No 'active' class --}}
-                        <img src="{{ asset('images/home/option-2.jpg') }}" loading="lazy" alt="Customer receiving service"
-                            class="image-cover-2 slideshow-image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card-body">
+                            <p class="details-home-title"><i class="fas fa-gavel me-4"></i> Intégrité</p>
+                            <p>Nous agissons avec honnêteté, transparence et respect des principes éthiques les plus
+                                élevés. Notre engagement envers l'intégrité garantit des relations de confiance avec
+                                nos membres et partenaires.</p>
 
-                        {{-- Image 3: No 'active' class --}}
-                        <img src="{{ asset('images/home/option-3.jpg') }}" loading="lazy" alt="Investment growth chart"
-                            class="image-cover-2 slideshow-image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-body">
+                            <p class="details-home-title"><i class="fas fa-award me-4"></i> Performance</p>
+                            <p>Nous visons l'excellence dans tous nos services. Grâce à une gestion rigoureuse et
+                                une recherche constante d'amélioration, nous garantissons des résultats optimaux
+                                pour nos membres et partenaires.</p>
 
-                        {{-- Image 4: No 'active' class --}}
-                        <img src="{{ asset('images/home/option-4.jpg') }}" loading="lazy" alt="Business handshake agreement"
-                            class="image-cover-2 slideshow-image" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <section class="partner">
-        <h2>La confiance de plus de 10 partenaires et de plus de 5000 clients</h2>
-        <span>Notre expertise et notre fiabilité sont reconnues. Faites
-            confiance à notre savoir-faire pour répondre à vos besoins avec efficacité et professionnalisme.</span>
-        <div class="partner-scroll-container">
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/minfi.png') }}" alt="Partner 1">
+</section>
+<div class="section-regular" style="margin-top: 6%; margin-bottom : 1% !important;">
+    <div data-w-id="697c3703-c243-502c-9917-758c8360a7bc" class="about-content-background-color"></div>
+    <div class="container-regular">
+        <div class="w-layout-grid about-content-grid">
+            <div id="w-node-_697c3703-c243-502c-9917-758c8360a7bf-172c3d36"
+                data-w-id="697c3703-c243-502c-9917-758c8360a7bf">
+                <div class="margin-bottom-24">
+                    <h2 class="h3-heading">Vos objectifs financiers sont importants</h2>
                 </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/logodgtcfm.jpeg') }}" alt="Partner 2">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/mutresor.png') }}" alt="Partner 3">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/reccucam.png') }}" alt="Partner 4">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/nfc.jpg') }}" alt="Partner 5">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/saar.jpg') }}" alt="Partner 6">
-                </div>
-
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/bf_life_insurance.png') }}" alt="Partner 1">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/bicec.png') }}" alt="Partner 2">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/ecobank.png') }}" alt="Partner 3">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/UBA-logo-2.png') }}" alt="Partner 4">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/wafacash.png') }}" alt="Partner 5">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/Ria.png') }}" alt="Partner 6">
-                </div>
-
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/fodecc.jpg') }}" alt="Partner 1">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/woldremit.png') }}" alt="Partner 2">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/paytop.png') }}" alt="Partner 3">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/Campost_logo.png') }}" alt="Partner 4">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/Orange-Money.jpg') }}" alt="Partner 5">
-                </div>
-                <div class="grid-item">
-                    <img src="{{ asset('images/partner/mobile-money.jpg') }}" alt="Partner 6">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="about" class="section-about-header">
-        <div class="container-regular">
-            <div data-w-id="77ea9046-7f1a-c6ac-33b1-f8cfd084d020" class="w-layout-grid about-header">
-                <div class="header-content">
-                    <h1 class="h1-heading sobre text-white">Votre satisfaction, notre priorité</h1>
-                </div>
-                <p class="paragraph-large text-white">
-                    Nous vous offrons des services et solutions bancaires rapides et efficaces, de l'ouverture d'un
-                    compte (salaire, épargne, parrainé, junior, entreprise) à la demande et d'obtention de votre prêt.
-                    Ouvrez votre compte et profitez d'une expérience bancaire souriante et sans tracas.
+                <p class="paragraph-regular">Imaginez un avenir où vos objectifs financiers ne
+                    sont plus de simples rêves, mais des réalités tangibles.
+                    Que vous souhaitiez <b>épargner</b> pour l'avenir de vos enfants,
+                    réaliser un <b>investissement immobilier</b>, ou développer
+                    votre <b>entreprise</b>, nous sommes là pour transformer vos aspirations en succès.
+                    <br />
+                    Votre sérénité financière est notre priorité absolue. Dans un monde en
+                    constante évolution, nous comprenons l'importance de protéger et de
+                    renforcer votre patrimoine. Au <b>CREMIN-CAM</b>, nous vous offrons bien
+                    plus que des produits financiers ; nous vous offrons la <b>tranquillité d'esprit</b>.
                 </p>
+                <p style="margin-top: 2%">Découvrez nos <a href="/" class="link">solutions bancaires</a> pour
+                    en
+                    savoir plus.</p>
             </div>
-            <div class="flex-row">
-                <div class="option" style="background-image: url('{{ asset("images/home/option-1.jpg") }}')"></div>
-                <div class="option" style="background-image: url('{{ asset("images/home/option-2.jpg") }}')"></div>
-                <div class="option" style="background-image: url('{{ asset("images/home/option-3.jpg") }}')"></div>
-                <div class="option" style="background-image: url('{{ asset("images/home/option-4.jpg") }}')"></div>
-            </div>
-
-        </div>
-        <div class="about-header-bg"></div>
-    </div>
-    <section class="details-home">
-        <div class="row">
-            <div class="col-12">
-                <h1>Bienvenue au <b>Crédit Mutuel d'Investissement du Cameroun</b></h1>
-            </div>
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-body">
-                                <p class="details-home-title"><i class="fas fa-hands-helping me-4"></i> Solidarité</p>
-                                <p>Nous sommes une institution financière qui met l'accent sur la coopération et
-                                    l'entraide. Nous croyons que la solidarité est la clé du succès, et nous nous
-                                    engageons à travailler ensemble.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="250">
-                            <div class="card-body">
-                                <p class="details-home-title"><i class="fas fa-handshake me-4"></i> Egalité</p>
-                                <p>Nous traitons tous nos membres et partenaires avec équité et respect, sans distinction
-                                    de race, de religion, de sexe ou d'origine sociale. Nous nous engageons à offrir les
-                                    mêmes opportunités à tous.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="150">
-                            <div class="card-body">
-                                <p class="details-home-title"><i class="fas fa-gavel me-4"></i> Intégrité</p>
-                                <p>Nous agissons avec honnêteté, transparence et respect des principes éthiques les plus
-                                    élevés. Notre engagement envers l'intégrité garantit des relations de confiance avec
-                                    nos membres et partenaires.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="200">
-                            <div class="card-body">
-                                <p class="details-home-title"><i class="fas fa-award me-4"></i> Performance</p>
-                                <p>Nous visons l'excellence dans tous nos services. Grâce à une gestion rigoureuse et
-                                    une recherche constante d'amélioration, nous garantissons des résultats optimaux
-                                    pour nos membres et partenaires.</p>
-
-                            </div>
-                        </div>
-                    </div>
+            <div data-w-id="697c3703-c243-502c-9917-758c8360a7c8" class="w-layout-grid about-content-image-grid">
+                <div id="w-node-_697c3703-c243-502c-9917-758c8360a7c9-172c3d36"
+                    class="about-content-image-bottom-left">
+                    <img src="{{ asset('images/home/services-2.jpg') }}" loading="lazy"
+                        id="w-node-_697c3703-c243-502c-9917-758c8360a7ca-172c3d36" sizes="90vw" alt=""
+                        srcset="{{ asset('images/home/services-2.jpg') }}" class="image-cover" />
                 </div>
-            </div>
-        </div>
-    </section>
-    <div class="section-regular" style="margin-top: 6%; margin-bottom : 1% !important;">
-        <div data-w-id="697c3703-c243-502c-9917-758c8360a7bc" class="about-content-background-color"></div>
-        <div class="container-regular">
-            <div class="w-layout-grid about-content-grid">
-                <div id="w-node-_697c3703-c243-502c-9917-758c8360a7bf-172c3d36"
-                    data-w-id="697c3703-c243-502c-9917-758c8360a7bf">
-                    <div class="margin-bottom-24">
-                        <h2 class="h3-heading">Vos objectifs financiers sont importants</h2>
-                    </div>
-                    <p class="paragraph-regular">Imaginez un avenir où vos objectifs financiers ne
-                        sont plus de simples rêves, mais des réalités tangibles.
-                        Que vous souhaitiez <b>épargner</b> pour l'avenir de vos enfants,
-                        réaliser un <b>investissement immobilier</b>, ou développer
-                        votre <b>entreprise</b>, nous sommes là pour transformer vos aspirations en succès.
-                        <br />
-                        Votre sérénité financière est notre priorité absolue. Dans un monde en
-                        constante évolution, nous comprenons l'importance de protéger et de
-                        renforcer votre patrimoine. Au <b>CREMIN-CAM</b>, nous vous offrons bien
-                        plus que des produits financiers ; nous vous offrons la <b>tranquillité d'esprit</b>.
-                    </p>
-                    <p style="margin-top: 2%">Découvrer nos <a href="/" class="link">solutions bancaires</a> pour
-                        en
-                        savoir.</p>
+                <div id="w-node-_697c3703-c243-502c-9917-758c8360a7cb-172c3d36" class="about-content-image-top-right">
+                    <img src="{{ asset('images/home/services-1.jpg') }}" loading="lazy"
+                        id="w-node-_697c3703-c243-502c-9917-758c8360a7cc-172c3d36" alt=""
+                        class="image-cover" />
                 </div>
-                <div data-w-id="697c3703-c243-502c-9917-758c8360a7c8" class="w-layout-grid about-content-image-grid">
-                    <div id="w-node-_697c3703-c243-502c-9917-758c8360a7c9-172c3d36"
-                        class="about-content-image-bottom-left">
-                        <img src="{{ asset('images/home/services-2.jpg') }}" loading="lazy"
-                            id="w-node-_697c3703-c243-502c-9917-758c8360a7ca-172c3d36" sizes="90vw" alt=""
-                            srcset="{{ asset('images/home/services-2.jpg') }}" class="image-cover" />
-                    </div>
-                    <div id="w-node-_697c3703-c243-502c-9917-758c8360a7cb-172c3d36" class="about-content-image-top-right">
-                        <img src="{{ asset('images/home/services-1.jpg') }}" loading="lazy"
-                            id="w-node-_697c3703-c243-502c-9917-758c8360a7cc-172c3d36" alt=""
-                            class="image-cover" />
-                    </div>
-                    <div id="w-node-_697c3703-c243-502c-9917-758c8360a7cd-172c3d36">
-                        <img src="{{ asset('images/home/services-3.jpg') }}" loading="lazy" alt=""
-                            class="image-cover" />
-                    </div>
+                <div id="w-node-_697c3703-c243-502c-9917-758c8360a7cd-172c3d36">
+                    <img src="{{ asset('images/home/services-3.jpg') }}" loading="lazy" alt=""
+                        class="image-cover" />
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <section class="section-regular-2 mt-4"
-        style="background-color: rgba(230, 230, 230, 0.288); padding: 5rem 5% 10px 5% !important">
-        <h1 class="h3-heading">Pourquoi choisir CREMIN-CAM</h1>
-        <div class="container choised">
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-header">
-                        <i class="fa-solid fa-basketball"></i>
-                        <h3>Offres adaptées</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Nous mettons à votre disposition des offres efficaces et adaptées à vos besoins.</p>
-                    </div>
+<section class="section-regular-2 mt-4"
+    style="background-color: rgba(230, 230, 230, 0.288); padding: 5rem 5% 10px 5% !important">
+    <h1 class="h3-heading">Pourquoi choisir CREMIN-CAM</h1>
+    <div class="container choised">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-basketball"></i>
+                    <h3>Offres adaptées</h3>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i class="fa-solid fa-file-zipper"></i>
-                        <h3>Services de qualité</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Quelqu'en soit votre situation, nous vous offrons un service de qualité.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i class="fa-solid fa-tachograph-digital"></i>
-                        <h3>Projets reussis</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Vous avez un projet, nous vous accompagnons de la mise en place jusqu'à sa
-                            reussite.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <i class="fa-solid fa-globe"></i>
-                        <h3>Disponibilité</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Nous sommes disponibles dans les points strategiques pour être plus proche de
-                            vous.</p>
-                    </div>
+                <div class="card-body">
+                    <p>Nous mettons à votre disposition des offres efficaces et adaptées à vos besoins.</p>
                 </div>
             </div>
-
-        </div>
-    </section>
-
-    <section class="choose surface-border about" id="about" data-aos="fade-up">
-        <div class="row justify-content-end" style="background: white; margin: 1% 0%">
-            <div class="col-lg-11">
-                <div class="row justify-content-end">
-
-                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                        <div class="count-box py-5">
-                            <i class="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="6000" class="purecounter">0</span>
-                            <p>Clients satisfaits</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                        <div class="count-box py-5">
-                            <i class="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="300" class="purecounter">0</span>
-                            <p>Projets financés</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                        <div class="count-box py-5">
-                            <i class="bi bi-clock"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="15" class="purecounter">0</span>
-                            <p>Années d'Expériences</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                        <div class="count-box py-5">
-                            <i class="bi bi-award"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="5" class="purecounter">0</span>
-                            <p>Awards</p>
-                        </div>
-                    </div>
-
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-file-zipper"></i>
+                    <h3>Services de qualité</h3>
+                </div>
+                <div class="card-body">
+                    <p>Quelle que soit votre situation, nous vous offrons un service de qualité.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-tachograph-digital"></i>
+                    <h3>Projets reussis</h3>
+                </div>
+                <div class="card-body">
+                    <p>Vous avez un projet, nous vous accompagnons de la mise en place jusqu'à sa
+                        reussite.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Disponibilité</h3>
+                </div>
+                <div class="card-body">
+                    <p>Nous sommes disponibles dans les points strategiques pour être plus proche de
+                        vous.</p>
                 </div>
             </div>
         </div>
-    </section>
 
-    {{-- Floating Video Widget --}}
-    <div class="floating-video-container" id="floatingVideo">
-        <button class="btn-close-video" onclick="document.getElementById('floatingVideo').style.display='none'" aria-label="Fermer">
-            <i class="fas fa-times"></i>
-        </button>
-        <iframe id="floatingIframe" width="100%" height="100%" src="https://www.youtube.com/embed/yiY9H14d80w?si=alIlzPiANvnHu3FN" title="Présentation CREMIN-CAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <div class="video-switcher">
-            <button class="switcher-btn active" onclick="switchFloatingVideo('https://www.youtube.com/embed/yiY9H14d80w?si=alIlzPiANvnHu3FN', this)">1</button>
-            <button class="switcher-btn" onclick="switchFloatingVideo('https://www.youtube.com/embed/3qndnqsImqw?si=e-RYFHme7XsaoVY4', this)">2</button>
+    </div>
+</section>
+
+<section class="choose surface-border about" id="about-stats" data-aos="fade-up">
+    <div class="row justify-content-end" style="background: white; margin: 1% 0%">
+        <div class="col-lg-11">
+            <div class="row justify-content-end">
+
+                <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box py-5">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="6000" class="purecounter">0</span>
+                        <p>Clients satisfaits</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box py-5">
+                        <i class="bi bi-journal-richtext"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="300" class="purecounter">0</span>
+                        <p>Projets financés</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box py-5">
+                        <i class="bi bi-clock"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="15" class="purecounter">0</span>
+                        <p>Années d'Expériences</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box py-5">
+                        <i class="bi bi-award"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="5" class="purecounter">0</span>
+                        <p>Awards</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+</section>
 
-    <style>
+{{-- Floating Video Widget --}}
+<div class="floating-video-container" id="floatingVideo">
+    <button type="button" class="btn-close-video" onclick="document.getElementById('floatingVideo').style.display='none'" aria-label="Fermer">
+        <i class="fas fa-times"></i>
+    </button>
+    <iframe id="floatingIframe" width="100%" height="100%" src="https://www.youtube.com/embed/yiY9H14d80w?si=alIlzPiANvnHu3FN" title="Présentation CREMIN-CAM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <div class="video-switcher">
+        <button class="switcher-btn active" onclick="switchFloatingVideo('https://www.youtube.com/embed/yiY9H14d80w?si=alIlzPiANvnHu3FN', this)">1</button>
+        <button class="switcher-btn" onclick="switchFloatingVideo('https://www.youtube.com/embed/3qndnqsImqw?si=e-RYFHme7XsaoVY4', this)">2</button>
+    </div>
+</div>
+
+<style>
+    .floating-video-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: min(520px, calc(100vw - 30px));
+        height: 280px;
+        z-index: 9990;
+        background: #000;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        border: 3px solid #fff;
+        overflow: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .btn-close-video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 8px;
+        z-index: 10;
+    }
+
+    .btn-close-video:hover {
+        background: #dc3545;
+    }
+
+    @media (max-width: 576px) {
         .floating-video-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 520px;
-            height: 280px;
-            z-index: 9990;
-            background: #000;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-            border: 3px solid #fff;
-            overflow: hidden;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            width: 280px;
+            height: 158px;
+            bottom: 15px;
+            right: 15px;
         }
-        .btn-close-video {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: rgba(0,0,0,0.6);
-            color: white;
-            border: none;
-            width: 32px;
-            height: 32px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom-left-radius: 8px;
-            z-index: 10;
-        }
-        .btn-close-video:hover {
-            background: #dc3545;
-        }
-        @media (max-width: 576px) {
-            .floating-video-container {
-                width: 280px;
-                height: 158px;
-                bottom: 15px;
-                right: 15px;
-            }
-        }
-        .video-switcher {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-            z-index: 20;
-        }
-        .switcher-btn {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            background: rgba(0,0,0,0.5);
-            color: #fff;
-            cursor: pointer;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-        }
-        .switcher-btn:hover, .switcher-btn.active {
-            background: #fff;
-            color: #000;
-        }
-    </style>
-    <script>
-        function switchFloatingVideo(url, btn) {
-            document.getElementById('floatingIframe').src = url;
-            document.querySelectorAll('.switcher-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-        }
-    </script>
+    }
+
+    .video-switcher {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 20;
+    }
+
+    .switcher-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    .switcher-btn:hover,
+    .switcher-btn.active {
+        background: #fff;
+        color: #000;
+    }
+</style>
+<script>
+    function switchFloatingVideo(url, btn) {
+        document.getElementById('floatingIframe').src = url;
+        document.querySelectorAll('.switcher-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+    }
+</script>
 @endsection

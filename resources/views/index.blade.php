@@ -101,45 +101,51 @@
 
 <body>
     <div class="page-wrapper">
-        <div fs-cc="banner" class="cookie-popup_component cookie--hidden" role="dialog" aria-live="polite" aria-label="Cookie consent banner" aria-modal="false">
+        <div fs-cc="banner" class="cookie-popup_component cookie--hidden" role="dialog" aria-live="polite" aria-label="Cookie consent banner" aria-modal="false" aria-labelledby="cookie-title" aria-describedby="cookie-description">
             <div class="cookie-modal_inner">
                 <div class="cookie-icon" aria-hidden="true">
                     <img src="{{ asset('images/icon/cremin.png') }}" alt="CREMIN-CAM" />
                 </div>
                 <div class="cookie-content">
-                    <p class="cookie-text">
+                    <h2 id="cookie-title" class="cookie-title">Gestion des cookies</h2>
+                    <p id="cookie-description" class="cookie-text">
                         En cliquant sur <strong>Accepter</strong>, vous consentez à ce que nous et nos partenaires utilisions des témoins (cookies) et technologies similaires pour améliorer l’expérience, analyser l’utilisation et personnaliser le marketing.
                         <a href="/crem-policy" target="_blank" rel="noopener">Politique de confidentialité</a>.
                     </p>
-                    <div class="cookie-actions" role="group" aria-label="Cookie actions">
+                    <div class="cookie-actions" role="group" aria-label="Actions cookies">
                         <button type="button" data-cc-decline class="btn btn-cookie btn-secondary">Refuser</button>
                         <button type="button" data-cc-accept class="btn btn-cookie btn-primary">Accepter</button>
                         <a href="/crem-policy" class="cookie-preferences" target="_blank" rel="noopener">Gérer les préférences</a>
                     </div>
                 </div>
-                <button class="cookie-close" aria-label="Fermer">&times;</button>
+                <button type="button" class="cookie-close" aria-label="Fermer" title="Fermer">&times;</button>
             </div>
 
             <style>
-                .cookie-popup_component { position: fixed; inset: auto 16px 16px 16px; z-index: 9999; max-width: 980px; margin: 0 auto; background: #fff; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); padding: 16px; transition: transform .36s ease, opacity .36s ease; opacity:0; transform: translateY(12px); }
+                .cookie-popup_component { position: fixed; inset: auto 16px 16px 16px; z-index: 9999; max-width: 980px; margin: 0 auto; background: #fff; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); padding: 16px 20px 16px 16px; transition: transform .36s ease, opacity .36s ease; opacity:0; transform: translateY(12px); }
                 .cookie-popup_component.cookie--visible { opacity:1; transform: translateY(0); }
-                .cookie-modal_inner { display:flex; gap:12px; align-items:center; }
+                .cookie-modal_inner { position: relative; display:flex; gap:12px; align-items:flex-start; }
                 .cookie-icon img{ width:48px; height:48px; border-radius:8px; object-fit:cover; }
                 .cookie-content { flex:1 1 auto; min-width: 0; }
+                .cookie-title { margin: 0 0 6px; font-size: 16px; line-height: 1.2; color: #1f2937; }
                 .cookie-text { margin:0 0 8px 0; font-size:14px; color:#333; line-height:1.35; }
+                .cookie-text a { color: #0d6efd; font-weight: 600; }
                 .cookie-actions { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
                 .btn-cookie { padding:8px 14px; border-radius:8px; font-weight:600; cursor:pointer; border:1px solid transparent; transition: background .18s, transform .12s; }
                 .btn-cookie:focus{ outline:3px solid rgba(13,110,253,0.12); outline-offset:2px; }
                 .btn-primary { background:#0d6efd; color:#fff; border-color:#0d6efd; }
                 .btn-secondary { background:transparent; color:#333; border:1px solid #ddd; }
-                .cookie-preferences { font-size:13px; color:#6c757d; text-decoration:underline; margin-left:6px; }
-                .cookie-close { background:transparent; border:0; font-size:20px; line-height:1; color:#777; padding:6px; margin-left:8px; cursor:pointer; }
+                .cookie-preferences { font-size:13px; color:#6c757d; text-decoration:underline; margin-left:6px; white-space:nowrap; }
+                .cookie-close { position: absolute; top: -2px; right: -2px; background:transparent; border:0; font-size:22px; line-height:1; color:#777; padding:6px; cursor:pointer; }
                 .cookie-close:focus{ outline:3px solid rgba(0,0,0,0.06); border-radius:6px; }
                 @media (max-width:720px){
                     .cookie-modal_inner{ flex-direction:column; align-items:stretch; gap:10px; }
                     .cookie-icon{ align-self:flex-start; }
                     .cookie-actions{ justify-content:flex-start; }
+                    .cookie-actions .btn-cookie{ flex: 1 1 calc(50% - 8px); }
+                    .cookie-preferences{ margin-left:0; width:100%; text-align:left; }
                     .cookie-popup_component{ right:12px; left:12px; padding:12px; }
+                    .cookie-close{ top: 2px; right: 2px; }
                 }
             </style>
         </div>
@@ -189,7 +195,7 @@
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
 
-                <a href="#" onclick="window.location = 'apk/solo-cremincam.apk';" target="_blank" class="appointment-btn" >SOLO BY CREMIN-CAM</a>
+                <a href="https://play.google.com/store/apps/details?id=com.cagecfi.pmobile_cremincam_client&hl=fr" target="_blank" class="appointment-btn" >SOLO BY CREMIN-CAM</a>
 
             </div>
         </header><!-- End Header -->

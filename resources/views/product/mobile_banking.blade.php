@@ -126,7 +126,7 @@
                                 class="products_client-logo" />
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="https://play.google.com/apps/test/com.cagecfi.pmobile_cremincam_client/27"
+                                    <a href="https://play.google.com/store/apps/details?id=com.cagecfi.pmobile_cremincam_client&hl=fr"
                                         class="btn-solo-product">
                                         <i class="fa-brands fa-google-play"></i>
                                         Telecharger l'application
