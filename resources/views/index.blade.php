@@ -172,7 +172,7 @@
             </div>
             <div class="container-fluid d-flex align-items-center">
                 <a href="/" class="logo me-auto"><img src="{{ asset('images/logo/cremincam.png') }}"
-                        alt="" class="img-fluid" style="width:20%;"></a>
+                        alt="" class="img-fluid"></a>
 
                 <nav id="navbar" class="navbar order-last order-lg-0" style="border-bottom: none !important">
                     <ul>
